@@ -1,0 +1,21 @@
+#write a program to input a name and then reverse it
+#name=list(input("enter your name"))
+name= input("enter your name? ")
+first,last=name.split()
+first1=list(first)
+last1=list(last)
+print("first= ",first,"last= ", last)
+first1.reverse()
+last1.reverse()
+rev_first="".join(first1)
+rev_lat="".join(last1)
+
+print("reverse of your name is ", rev_first,rev_lat)
+
+
+
+# name = input("enter your name ")
+# name.split(" ")
+# first , last = name.split(" ")
+# print("first= ",first,"last= ", last)
+

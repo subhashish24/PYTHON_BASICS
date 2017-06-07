@@ -1,0 +1,29 @@
+counter=5
+while counter>0:
+    print(counter)
+    counter-=1
+while 1:
+    print("it executes atleat once")
+    if not counter:
+        break
+    
+names=['sam','john','rick']
+while names:
+    name=names.pop()
+    print(name,"is playing")
+
+result=[0,1,1,1,0]
+passes=0
+fails=0
+processes=0
+while result:
+    r1=result.pop()
+    processes+=1
+    if r1:
+        passes+=1
+        continue
+    else:
+        fails+=1
+        continue
+else:
+    print("processed",processes,"passed",passes,"fails",fails)

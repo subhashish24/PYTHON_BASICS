@@ -1,0 +1,65 @@
+range_demo= range(10)
+print("range values", range_demo)
+print("list in the range", list(range_demo))
+for i in range(5):
+    print(i)
+range_demo1=range(10,20)
+print("range_demo1", list(range_demo1))
+range_demo2=range(10,-1,-1)
+print("range_demo2", list(range_demo2))
+#sets
+
+empty_set=set();
+print("empty set", empty_set)
+alphabets=['a','b','c','d','e']
+alphabets2=['a','b','k','o','l']
+alphabets2_set=set(alphabets2)
+alpha_set=set(alphabets)
+print("alphabet set", alpha_set)#unordered
+dup_alphabets=['f','g','g','h','i','i','j','j']
+dup_alphabets_set=set(dup_alphabets)#discard duplicates
+print("no duplicates", dup_alphabets_set)
+print(list(dup_alphabets_set))
+print(sorted(dup_alphabets_set))
+union_set=alpha_set.union(dup_alphabets_set)
+union_set1=alpha_set | dup_alphabets_set
+print("union",union_set)
+print("union uing or", union_set1)
+intersect= alpha_set.intersection(alphabets2_set)
+print("intersect set",intersect)
+intersect1=alpha_set & alphabets2_set
+print("intersect using &", intersect1)
+update_set=alpha_set.copy()
+update_set.update(alphabets2_set)
+print("update set", update_set)
+
+#dict
+
+empty_dictionary=dict()
+print("empty dictionary", empty_dictionary)
+dictionary={'k1':'v1', 'k2':'v2'}
+dictioary_new=dict(k4='12',k3='34')
+print(dictionary)
+print(dictioary_new)
+print(dictionary['k1'])
+dictionary['k3']=89
+print(dictionary)
+dictionary['k1']=56
+dictionary['k2']=98
+print(dictionary)
+del(dictionary['k2'])
+print(dictionary)
+dictionary_ref=dictionary
+dictionary_copy=dictionary.copy()
+dictionary.clear()
+print(dictionary)
+print(dictionary_ref)
+print(dictionary_copy)
+keys = dictionary_copy.keys()
+print("key values", keys)
+values= dictionary_copy.values()
+print("the values", values)
+mapping = zip(keys,values)
+print("mapping object", mapping)
+dictionary1_new= dict(mapping)
+print(dictionary1_new)

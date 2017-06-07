@@ -1,0 +1,38 @@
+for num in range(5):
+    print(num, end=" ")
+print()
+    
+for val in range(10,20):
+    print(val, end=" ")
+print()
+for val in range(10,-1,-1):
+    print(val, end=" ")
+print()
+for char in "string":
+    print(char, end=" ")
+print()
+for val in ['hey','hello','good morning']:
+    print("he whishes", val)
+print()
+dictionary={'k1': 78, 'k2':5, 'k3':45}
+for key in dictionary:
+    if key=='k2':
+        continue
+    print("values except k2", key," ", dictionary[key])
+    
+# prime numbers
+
+for val_out in range(2,20):
+    for val_in in range(2,val_out):
+        if not val_out%val_in:
+            print(val_out,"=",val_in, "*", int(val_out/val_in))
+            break
+        
+    else:
+        print(val_out, "is prime")
+     
+
+
+        
+
+   

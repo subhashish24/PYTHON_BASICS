@@ -1,0 +1,39 @@
+str_list=list();
+print(str_list)
+str_list1=list('hello')
+print(str_list1)
+str_list2=list((1,2,3,(4,5,(6,1))))#tuple
+print(str_list2)
+empty_list=[]
+print('empty_list', empty_list)
+str_list3=[3,4,5.6,'a','b']
+print(str_list3)
+print('char there', 'a' in str_list3)
+print('char not there ', 1 not in str_list3)
+empty_list.append(5)
+print('empty_list', empty_list)
+empty_list.append([9,7])
+print('empty_list', empty_list)
+empty_list.pop()#the last element it will pop
+print('empty_list', empty_list)
+empty_list.extend([9,7])
+print('empty_list', empty_list)
+empty_list.insert(1,10)
+print('empty_list', empty_list)
+empty_list.pop(0)
+print('empty_list', empty_list)
+empty_list.insert(3,15)
+print('empty_list', empty_list)
+empty_list.remove(15)#by value
+print('empty_list', empty_list)
+empty_list.clear();
+print('empty_list', empty_list)
+
+print('str_list1', sorted(str_list1))#the original remains same
+print('str_list1',str_list1)
+str_list1.sort()
+print('str_list1',str_list1)
+str_list1.reverse()
+print('str_list1',str_list1)
+
+

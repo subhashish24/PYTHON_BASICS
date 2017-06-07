@@ -1,0 +1,40 @@
+string1 = 'hello everyone'
+string2= "welcome to python "
+print(string1, string2)
+sting3= '"an apple a day keep the doctor away"'
+print(sting3)
+sting4="it's a hot day"
+print(sting4)
+string5= "she said \"hello\""
+string6= 'it\'s mine'
+print(string5, string6)
+new_line= 'this\n is\n python\n basics'
+print(new_line)
+tab_line='this\tis\tto\tdemonstrate\ttab'
+print(tab_line)
+no_interpretation=r'hello\n\how\nare\tyou\tdoing'
+print(no_interpretation)
+new_text="good"
+new_text1="morning"
+string7="I AM BATMAN"
+print('concat by +', new_text+new_text1)
+print('to repeat char','a'*10)
+print("length of string", len(string1))
+print("max of the string", max(string1))
+print("min of string", min(new_text1))# according to unicode
+print("search subtext result=", new_text in string1)
+print("search subtext result=", 'hello' in string1)
+print("count of char in string", string1.count('e'))
+print("count of char in string", string1.count(' '))#special char space
+print("index for a char", string1.index("e"))#starts from 0
+#print('feteches error',string1.index('z')) value error
+print('find option', string1.find('e'))
+print('find gives -1 when not found', string1.find('z'))
+print('index after', string1.index('e', 3, 14))
+print('upper case to lowercase',string7.lower() )
+print('lower case to upper case',string1.upper())
+string8='h,e,l,l,o'
+print('split', string8.split(","))
+print('join', ' '.join(['a','b','c']))
+print('alphabet or not', new_text.isalpha())
+print('numeric or not', string8.isdigit())

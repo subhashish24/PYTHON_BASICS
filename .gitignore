@@ -1,0 +1,29 @@
+x=5
+y=10
+y=0xA
+y=0o12
+y=0b1010
+print('x=y', x==y)
+print('x!=y', x!=y)
+print('x<y', x<y)
+print('x>y', x>y)
+print('x<=y', x<=y)
+print('x>=y', x>=y)
+print('x+y', x+y)
+print('x-y', x-y)
+print('x*y', x*y)
+print('x/y', x/y)
+print('x%y', x%y)
+print('x**y', x**y)
+print('x//y', x//y) # floor operation
+print('divmod(x,y)', divmod(x,y))
+print('divmod(y,x)', divmod(y,x))
+print('abs(-x)', abs(-x))
+print('pow(x,y)', pow(x,y))
+print('int(5.44)', int(5.44))
+print('float(y)', int(y))
+print('int(0xff,16)', int('0xff',16))
+#print(x++) not allowed
+print('x+=y', end=' ')
+x += y 
+print( x)

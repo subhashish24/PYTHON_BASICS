@@ -1,0 +1,26 @@
+import math
+pi = math.pi
+e = math.e
+x , y = 5.0, 10.0
+print(pi)
+print('the rounded value for pi', round(pi,4))
+positive_infinity = float('inf')
+negative_infinity = float('-inf')
+not_a_number = float('nan')
+print(math.isinf(positive_infinity))
+print(math.isinf(negative_infinity))
+print(math.isnan(not_a_number))
+print('positive_infinity+negative_infinity', positive_infinity+negative_infinity)
+print('positive_infinity * not_a_number', positive_infinity * not_a_number)
+print('positive_infinity + x', positive_infinity+x)
+print('nan==nan', not_a_number==not_a_number)
+print('factorial', math.factorial(x))
+print(math.pow(x,y))
+print(math.log(x))
+print(math.log10(x))
+print(math.cos(x))
+print(math.acosh(x))
+print(math.sqrt(25))
+print(math.degrees(x))
+print(math.radians(256.6))
+
